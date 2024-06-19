@@ -1,0 +1,23 @@
+BACKEND (Laravel)
+
+composer create-project laravel/Laravel Laravel (install)
+
+php artisan make:model Gallery -m (generate model + migration)
+
+php artisan make:controller GalleryController
+php artisan make:request GelleryStoreRequest
+
+php artisan install:api
+
+php artisan storage:link (Syulit)
+
+php artisan serve (mulai)
+------------------------------------------------------------------------------------
+
+FRONTEND (next.js)
+
+npx create-next-app@latest / npx create-next-app my-blog  (install)
+npm install axios (install axios)
+
+
+npm run dev (mulai)
