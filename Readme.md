@@ -1,12 +1,6 @@
 # 📌 CRUD Image with Laravel & React
 
-Proyek fullstack sederhana untuk melakukan **CRUD gambar** menggunakan:
-
-- **Laravel 11** sebagai Backend API
-- **React JS** sebagai Frontend
-- **MySQL** sebagai database
-
-Mendukung upload gambar, edit gambar, dan hapus gambar dengan tampilan UI yang clean dan modern.
+Proyek fullstack sederhana untuk melakukan **CRUD gambar** menggunakan **Laravel 11** sebagai Backend API, **React JS** sebagai Frontend, dan **MySQL** sebagai database. Mendukung upload gambar, edit gambar, dan hapus gambar dengan tampilan UI yang clean dan modern.
 
 ---
 
@@ -24,100 +18,120 @@ Mendukung upload gambar, edit gambar, dan hapus gambar dengan tampilan UI yang c
 
 ## ✨ Features
 
-- 📤 **Upload gambar**
-- ✏️ **Edit gambar**
-- 🗑 **Remove / delete gambar**
-- 🗄 **Simpan gambar ke database**
-- 🔧 **REST API Laravel**
-- ⚡ **React frontend with Axios**
+- 📤 Upload gambar
+- ✏️ Edit gambar
+- 🗑 Remove / delete gambar
+- 🗄 Simpan gambar ke database
+- 🔧 REST API Laravel
+- ⚡ React frontend with Axios
 
 ---
 
-# 🚀 Cara Menjalankan Project di Lokal
+## 🚀 Cara Menjalankan Project di Lokal
 
-Clone repository:
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/oneraid/CRUD-image-laravelreact.git
+cd CRUD-image-laravelreact
+```
 
-🔧 Backend (Laravel)
+---
 
-Masuk ke folder backend:
+### 2. Setup Backend (Laravel)
 
+#### Masuk ke folder backend:
+
+```bash
 cd Laravel
+```
 
+#### Install dependencies:
 
-Install dependencies:
-
+```bash
 composer install
+```
 
+#### Copy file environment:
 
-Copy file environment:
-
+```bash
 cp .env.example .env
+```
 
+Atau rename manual: `.env.example` → `.env`
 
-Atau rename manual:
+#### Konfigurasi Database
 
-.env.example → .env
+Edit file `.env`:
 
-⚙ Konfigurasi Database
-
-Edit file .env:
-
+```env
 DB_DATABASE=your_database
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
+```
 
+#### Generate key:
 
-Generate key:
-
+```bash
 php artisan key:generate
+```
 
+#### Migrasi tabel:
 
-Migrasi tabel:
-
+```bash
 php artisan migrate
+```
 
+#### Jalankan server backend:
 
-Jalankan server backend:
-
+```bash
 php artisan serve
+```
 
-⚠ Wajib: Atur Batas Upload di php.ini
+Backend berjalan di: `http://localhost:8000`
 
-Agar upload gambar tidak dibatasi hanya 2MB seperti default PHP.
+---
 
-Edit file php.ini yang digunakan server kamu (cek melalui phpinfo()):
+### ⚠️ Penting: Atur Batas Upload di php.ini
 
+Agar upload gambar tidak dibatasi hanya 2MB seperti default PHP, edit file `php.ini`:
+
+```ini
 upload_max_filesize = 100M
 post_max_size = 100M
+```
 
+**Setelah perubahan → Restart Apache/Laragon/XAMPP.**
 
-Setelah perubahan → Restart Apache/Laragon/XAMPP.
+---
 
-💻 Frontend (React)
+### 3. Setup Frontend (React)
 
-Masuk ke folder frontend:
+#### Masuk ke folder frontend:
 
+```bash
 cd react
+```
 
+#### Install dependency:
 
-Install dependency:
-
+```bash
 npm install
+```
 
+#### Jalankan aplikasi:
 
-Jalankan aplikasi:
-
+```bash
 npm start
+```
 
+Frontend berjalan di: `http://localhost:3000`
 
-Frontend berjalan di:
+---
 
-http://localhost:3000
+## 📂 Struktur Folder
 
-📂 Struktur Folder
+```
 CRUD-image-laravelreact/
 │
 ├── Laravel/         # Backend API (Laravel 11)
@@ -130,39 +144,29 @@ CRUD-image-laravelreact/
     ├── src/
     ├── public/
     └── ...
+```
 
-🧰 Tools & Teknologi
+---
 
-Laravel 11
+## 🧰 Tools & Teknologi
 
-React Vite (jika digunakan)
+- Laravel 11
+- React JS
+- Axios
+- MySQL / MariaDB
+- PHP 8+
+- Composer
+- Node.js + NPM
 
-Axios
+---
 
-MySQL / MariaDB
-
-PHP 8+
-
-Composer
-
-Node.js + NPM
-
-📜 License
+## 📜 License
 
 Project ini open-source. Silakan digunakan untuk belajar atau pengembangan.
 
-👤 Author
+---
 
-Ridhwan Firdaus
-GitHub: https://github.com/oneraid
+## 👤 Author
 
-
-Jika ingin saya tambahkan:
-
-- dokumentasi API (endpoint upload/update/delete)
-- screenshot asli
-- badge GitHub (stars / forks / license)
-- GIF demo aplikasi
-
-Tinggal bilang 👍
-```
+**Ridhwan Firdaus**  
+GitHub: [https://github.com/oneraid](https://github.com/oneraid)
