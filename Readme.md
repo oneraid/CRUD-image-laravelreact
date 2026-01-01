@@ -12,13 +12,13 @@ Mendukung upload gambar, edit gambar, dan hapus gambar dengan tampilan UI yang c
 
 ## 📸 Preview
 
-### **Landing Page**
+### Landing Page
 
-![Landing Page](image)
+![Landing Page](LandingPage.png)
 
-### **Halaman Utama**
+### Halaman Utama
 
-![Home Page](image)
+![Halaman Utama](HalamanUtama.png)
 
 ---
 
